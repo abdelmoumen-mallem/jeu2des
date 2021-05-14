@@ -1,36 +1,86 @@
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+body{
+   margin:0;
+   padding: 0;
+   background: linear-gradient(90deg,#d3d3d3 50%,white 50%);
+}
+
+#icone1,#icone4,#icone5 {
+position: relative;
+top:11%;
+right: 1%;
+font-family: 'Material Icons';
+cursor: pointer;
+font-weight: normal;
+font-style: normal;
+font-size: 30px;
+display: inline-block;
+line-height: 1;
+text-transform: none;
+letter-spacing: normal;
+word-wrap: normal;
+white-space: nowrap;
+color: red;
+user-select: none;
+
+}
+
+#icone2,#icone3{
+position: relative;
+left:5%;
+bottom:10%;
+font-size:15px;
+color: red;
+display: none;
+}
+
+#icone4,#icone5{
+position: relative;
+bottom: -5px;
+}
+
+#compteur1,#compteur2{
+font-size:60px;
+color: red;
+}
+
+#des{
+color: red;
+}
+
 #compteur1{
-    position: relative;
-    left:8%
-    }
-    
-    #compteur2{
-    position: relative;
-    right:8%;
-    }
-    p {
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-        font-size: 30px;
-    }
-    
-    body{
-       margin:0;
-       padding: 0;
-       background: linear-gradient(90deg,#d3d3d3 50%,white 50%);
-    }
-    #icone1,#icone4,#icone5 {
-        position: relative;
-        top:11%;
-        right: 1%;
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 30px;
-        display: inline-block;
-        line-height: 1;
-        text-transform: none;
-        letter-spacing: normal;
-        word-wrap: normal;
-        white-space: nowrap;
-        
-        }
+position: relative;
+left:8%
+}
+
+#compteur2{
+position: relative;
+right:8%;
+}
+
+#current1,#current2{
+height: 70px;
+}
+
+
+.p1{
+font-size:13px;
+}
+
+.p2,.p4{
+font-size:25px;
+}
+
+.p3{
+font-size:23px;
+}
+
+#option{
+position: relative;
+top:-10px;
+}
