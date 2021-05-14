@@ -11,13 +11,14 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <link rel="preconnect" href="https://fonts.gstatic.com">
             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link rel="stylesheet" href="des.css">
             <script src="https://kit.fontawesome.com/0829dbba84.js" crossorigin="anonymous"></script>
         </head>
     <body class="container-fluid">
     <div class="row">
         <p></p>
         <p></p>
-        <p class="col-12 text-center">NEW GAME</p>
+        <p class="col-12 text-center"><span id="icone1" class="material-icons-outlined text-alert">&#xe148;</span>NEW GAME</p>
     </div>
         <div class="row">
         <p></p>
@@ -25,13 +26,14 @@
         <p></p>
     </div>
     <div class="row">
-        <p class="col-5 text-center">PLAYER 1</p>
+        <p class="col-5 text-center">PLAYER 1<span id="icone2" class="fas fa-circle"></span></p>
     <div class="col-2"></div>
-        <p class="col-5 text-center">PLAYER 2</p>
+        <p class="col-5 text-center">PLAYER 2<span id="icone3" class="fas fa-circle"></span></p>
     </div>
     <div class="row">
-        <p id="compteur1" class=" col-6 text-center">0</p>
-        <p id="compteur2" class="col-6 text-center">0</p>
+        <p id="compteur1" class=" col-3 text-center">0</p>
+        <i id="des"class="fas fa-dice-d6 col-6 text-center  fa-5x"></i>
+        <p id="compteur2" class="col-3 text-center">0</p>
     </div>
     <div class="row">
             <p></p>
@@ -47,17 +49,17 @@
     <div class="row no-gutter ">
         <div class="col-2 ">
         </div>
-        <div id="current1" class=" col-1  text-center  d-inline-block ">
+        <div id="current1" class=" col-1   text-center  d-inline-block ">
             <p class="p1 ">CURRENT</p>
             <p id="current01"class="p3  ">0</p>
         </div>
         <div id="option" class="text-center  col-6  d-inline-block ">
-            <p class="p2">ROLL DICE</p>
-            <p class="p4">HOLD</p>
+            <p class="p2"><span id="icone4" class="material-icons-outlined">&#xe028;</span>ROLL DICE</p>
+            <p class="p4"><span id="icone5" class="material-icons-outlined">&#xe171;</span>HOLD</p>
         </div> 
-        <div id="current2" class=" col-1  text-center d-inline-block">
+        <div id="current2" class=" col-1   text-center d-inline-block">
             <p class="p1">CURRENT</p>
-            <p id="current02" class="p3 ">0</p>
+            <p id="current02" class="p3  ">0</p>
         </div>
         <div class="col-2"></div>
         </div>
@@ -67,6 +69,7 @@
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script  type="text/javascript" src="des.js"></script>
     </body>
 </html>
 
