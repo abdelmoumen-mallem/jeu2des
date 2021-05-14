@@ -1,0 +1,36 @@
+#compteur1{
+    position: relative;
+    left:8%
+    }
+    
+    #compteur2{
+    position: relative;
+    right:8%;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    
+    body{
+       margin:0;
+       padding: 0;
+       background: linear-gradient(90deg,#d3d3d3 50%,white 50%);
+    }
+    #icone1,#icone4,#icone5 {
+        position: relative;
+        top:11%;
+        right: 1%;
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        
+        }
