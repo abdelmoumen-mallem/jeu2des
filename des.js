@@ -10,6 +10,7 @@ let a9=document.getElementById('current01').textContent;
 let a10=document.getElementById('current02').textContent;
 
 a7.addEventListener("click",player1);
+a8.addEventListener("click",hold1);
 
 
 let winner1= a8.addEventListener("mouseout",()=>{         
@@ -42,7 +43,9 @@ function player1(){
     let a7=document.getElementById('icone4');
     let a8=document.getElementById('icone5');
 
-   
+    document.getElementById('icone5').addEventListener("click", hold1);
+    document.getElementById('icone5').removeEventListener("click", hold2);
+
     a2.style.display="inline";
     a3.style.display="none";
     a7=Math.floor(Math.random()*(6-1+1))+1;
@@ -71,7 +74,8 @@ function player2(){
     let a8=document.getElementById('icone5');
     let a5=document.getElementById('compteur2').textContent;
 
-   
+    document.getElementById('icone5').addEventListener("click", hold2);
+    document.getElementById('icone5').removeEventListener("click", hold1);
    
     a3.style.display="inline";
     a2.style.display="none";            
@@ -90,5 +94,42 @@ function player2(){
     document.getElementById('current02').textContent=0;
     document.getElementById('icone4').removeEventListener("click", player2);
     document.getElementById('icone4').addEventListener("click", player1);}
+}
+
+function hold1(){
+        let a8=document.getElementById('icone5');
+        let a4=document.getElementById('compteur1').textContent;
+        let a9=document.getElementById('current01').textContent;
+        let a2=document.getElementById('icone2');
+        let a3=document.getElementById('icone3');
+
+        document.getElementById('compteur1').textContent=parseInt(a9)+parseInt(a4);
+        document.getElementById('current01').textContent=0;
+        document.getElementById('des').className="fas fa-dice col-6 text-center  fa-5x";
+        if(document.getElementById('des').className=="fas fa-dice col-6 text-center  fa-5x"){
+        a3.style.display="inline";
+        a2.style.display="none";     
+        document.getElementById('icone4').removeEventListener("click", player1);
+        document.getElementById('icone4').addEventListener("click", player2);
+    }
+}
+        
+function hold2(){
+        let a5=document.getElementById('compteur2').textContent;
+        let a10=document.getElementById('current02').textContent;
+        let a6=document.getElementById('des');
+        let a2=document.getElementById('icone2');
+        let a3=document.getElementById('icone3');
+
+        document.getElementById('compteur2').textContent=parseInt(a10)+parseInt(a5);
+        document.getElementById('current02').textContent=0;
+        document.getElementById('des').className="fas fa-dice col-6 text-center  fa-5x";
+
+        if(document.getElementById('des').className=="fas fa-dice col-6 text-center  fa-5x"){
+        a3.style.display="none";
+        a2.style.display="inline";     
+        document.getElementById('icone4').removeEventListener("click", player2);
+        document.getElementById('icone4').addEventListener("click", player1);
+    }
 }
 
